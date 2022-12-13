@@ -8,7 +8,8 @@ body {
     grid-column-gap: 40px;
     background-image: linear-gradient(to right top, #325897, #2d508c, #284882, #234177, #1e396d, #1c3466, #192f5e, #172a57, #172651, #17234c, #161f46, #151c41);
     color:aliceblue;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -56,7 +57,7 @@ body {
 }
 
 .link-image {
-    height: 40px;
+    height: 30px;
 }
 
 #tv2-title {
@@ -99,7 +100,7 @@ a {
 ul {
     list-style: none;
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 .link {
