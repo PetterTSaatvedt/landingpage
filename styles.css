@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
     background-image: linear-gradient(to right top, #325897, #2d508c, #284882, #234177, #1e396d, #1c3466, #192f5e, #172a57, #172651, #17234c, #161f46, #151c41);
     color:aliceblue;
     min-height: 100vh;
@@ -15,8 +13,9 @@ body {
 
 .left {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     padding: 50px;
+    padding-left: 150px;
 }
 
 .cards {
@@ -29,14 +28,16 @@ body {
 }
 
 .right {
-    grid-column-start: 2;
-    padding: 50px;
+    grid-column-start: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    padding: 50px;
+    padding-right: 150px;
 }
 
 .card {
+    min-width: 300px;
     height: 200px;
     transition: ease-out .5s;
     background-color: rgb(27, 27, 63);
@@ -44,7 +45,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Quicksand', sans-serif;
     color: rgb(255, 255, 255);
 }
 
@@ -70,10 +71,19 @@ body {
     margin-top: -55px;
 }
 
-#tv2-image {
-    margin-right: 6px;
-    margin-top: 7px;
+#facebook-logo {
+    height: 80px;
+    margin-top: 8px;
+}
+
+#netflix-image {
     height: 50px;
+}
+
+#tv2-image {
+    margin-right: 10px;
+    margin-top: 7px;
+    height: 40px;
 }
 
 #viaplay-image {
@@ -100,13 +110,12 @@ a {
 ul {
     list-style: none;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .link {
     background-color: rgb(27, 27, 63);
     margin: 10px;
-    width: 500px;
+    width: 400px;
     text-align: center;
     margin-left: -40px;
     display: flex;
@@ -121,4 +130,12 @@ ul {
 .link:hover {
     transform: scale(1.1);
     transition: .5s;
+}
+
+.move-right {
+    margin-left: 5px;
+}
+
+.move-left {
+    margin-left: -8px;
 }
